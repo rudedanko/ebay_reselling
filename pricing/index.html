@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pricing and Profit Calculators for Your eBay Business</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/getting-started/index.html">Getting Started</a></li>
+				<li><a href="/sourcing-products/index.html">Sourcing Products</a></li>
+				<li><a href="/shipping/index.html">Shipping and Fulfillment</a></li>
+				<li><a href="/pricing/index.html">Pricing and Profit Calculators</a></li>
+				<li><a href="/excel/index.html">Excel Sheets</a></li>
+				<li><a href="/faq/index.html">FAQ and Support</a></li>
+			</ul>
+			<a class="cta" href="#signup">Sign Up</a>
+		</nav>
+		<h1>Pricing and Profit Calculators for Your eBay Business</h1>
+		<p>Maximize your profits and minimize your risks by using our pricing and profit calculators.</p>
+	</header>
+	<main>
+		<section>
+			<h2>Price Calculator</h2>
+			<p>Use our price calculator to determine the best selling price for your items. Simply enter the cost of the item, the fees associated with selling on eBay, and the profit margin you want to make, and our calculator will give you the recommended selling price.</p>
+			<form>
+				<label for="cost">Cost of Item:</label>
+				<input type="number" id="cost" name="cost" required>
+				<label for="fees">Fees:</label>
+				<input type="number" id="fees" name="fees" required>
+				<label for="profit">Desired Profit Margin:</label>
+				<input type="number" id="profit" name="profit" required>
+				<input type="submit" value="Calculate">
+			</form>
+		</section>
+		<section>
+			<h2>Profit Calculator</h2>
+			<p>Use our profit calculator to determine your expected profits for a given item. Simply enter the selling price, the cost of the item, and the fees associated with selling on eBay, and our calculator will give you your expected profit.</p>
+			<div class="calculator">
+        <label for="cost">Cost:</label>
+        <input type="number" id="cost" name="cost" placeholder="0.00">
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" placeholder="0.00">
+        <label for="shipping">Shipping:</label>
+        <input type="number" id="shipping" name="shipping" placeholder="0.00">
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+          <option value="electronics">Electronics</option>
+          <option value="clothing">Clothing</option>
+          <option value="home-garden">Home &amp; Garden</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="sports">Sports</option>
+        </select>
+        <button onclick="calculate()">Calculate</button>
+        <div class="result">
+          <p>Profit: <span id="profit"></span></p>
+        </div>
+      </div>
+      <script src="script.js"></script>
+	</main>
+	<footer>
+		<p>Need help with your eBay business? Contact us at support@myebaybusiness.com.</p>
+	</footer>
+</body>
+</html>

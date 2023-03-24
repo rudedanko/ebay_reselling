@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How to Start an eBay Reselling Business</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="/getting-started/index.html">Getting Started</a></li>
+				<li><a href="/sourcing-products/index.html">Sourcing Products</a></li>
+				<li><a href="/shipping/index.html">Shipping and Fulfillment</a></li>
+				<li><a href="/pricing/index.html">Pricing and Profit Calculators</a></li>
+				<li><a href="/excel/index.html">Excel Sheets</a></li>
+				<li><a href="/faq/index.html">FAQ and Support</a></li>
+			</ul>
+			<a class="cta" href="#signup">Sign Up</a>
+		</nav>
+		<h1>How to Start an eBay Reselling Business</h1>
+		<p>Learn how to start and grow a profitable eBay reselling business with our comprehensive guides and resources.</p>
+	</header>
+	<main>
+		<section id="getting-started">
+			<h2>Getting Started</h2>
+			<p>Discover the benefits and risks of starting an eBay reselling business and learn how to set up your own store.</p>
+			<a class="cta" href="getting-started/index.html">Read More</a>
+		</section>
+		<section id="sourcing-products">
+			<h2>Sourcing Products</h2>
+			<p>Find out where to source products for your eBay store and learn how to evaluate potential products for profitability.</p>
+			<a class="cta" href="#">Read More</a>
+		</section>
+		<section id="shipping-and-fulfillment">
+			<h2>Shipping and Fulfillment</h2>
+			<p>Learn how to manage shipping and fulfillment for your eBay store and find links to affordable shipping supplies.</p>
+			<a class="cta" href="#">Read More</a>
+		</section>
+		<section id="pricing-and-profit-calculators">
+			<h2>Pricing and Profit Calculators</h2>
+			<p>Discover the best pricing strategies for your eBay store and use our tools for calculating profit margins.</p>
+			<a class="cta" href="#">Read More</a>
+		</section>
+		<section id="excel-sheets">
+			<h2>Excel Sheets</h2>
+			<p>Download our useful Excel sheets for managing inventory, expenses, and profits for your eBay store.</p>
+			<a class="cta" href="#">Read More</a>
+		</section>
+		<section id="faq-and-support">
+			<h2>FAQ and Support</h2>
+			<p>Find answers to frequently asked questions about eBay reselling and get in touch with our customer support team.</p>
+			<a class="cta" href="#">Read More</a>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright © 2023 How to Start an eBay Reselling Business.
+		<br>All rights reserved.</p>
+	</footer>
+
+    <div class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Sign Up</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+
+      <script>
+        // Get the modal
+        var modal = document.querySelector('.modal');
+        
+        // Get the button that opens the modal
+        var btn = document.querySelector('.cta');
+        
+        // Get the <span> element that closes the modal
+        var span = document.querySelector('.close');
+        
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+        
+</body>
+</html>
