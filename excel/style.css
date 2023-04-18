@@ -1,119 +1,117 @@
-/* Global styles */
+/* Reset default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  body {
-    font-family: Arial, sans-serif;
+  /* Set a natural font size for all elements */
+  html {
     font-size: 16px;
-    line-height: 1.5;
+    font-family: sans-serif;
+  }
+  
+  /* Apply a natural background color and text color to the body */
+  body {
+    background-color: #f2f2f2;
     color: #333;
-    background-color: #f7f7f7;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
   }
   
-  a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+  /* Style the header and navigation bar */
   header {
-    background-color: #fff;
-    padding: 1rem;
+    background-color: #f2f2f2;
+    padding: 2rem;
+    text-align: center;
   }
   
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 960px;
-    margin: 0 auto;
   }
   
   nav ul {
-    display: flex;
     list-style: none;
+    display: flex;
   }
   
   nav li {
-    margin-right: 1rem;
+    margin-left: 1rem;
   }
   
-  nav li:last-child {
-    margin-right: 0;
+  nav a {
+    text-decoration: none;
+    color: #0b0b0b;
+    padding: 0.5rem;
+    transition: background-color 0.2s ease;
   }
   
-  nav a.cta {
-    background-color: #333;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
+  nav a:hover {
+    background-color: #ddd;
+    color: #333;
   }
   
-  nav a.cta:hover {
-    background-color: #555;
+  .cta {
+    background-color: #f2f2f2;
+    color: #333;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    transition: background-color 0.2s ease;
   }
   
+  .cta:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  /* Style the main content sections */
   main {
-    flex: 1;
-    padding: 2rem;
-    max-width: 960px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
   }
   
   section {
-    margin-bottom: 2rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
   }
   
-  h1, h2 {
+  section h2 {
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
   
-  ul {
-    list-style: disc;
-    margin-left: 2rem;
+  section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
   }
   
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 2rem;
+  section .cta {
+    margin-top: 1rem;
   }
   
-  th, td {
-    text-align: left;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #f5f5f5;
-  }
-  
-  tfoot th {
-    text-align: right;
-  }
-  
-  tfoot td {
-    font-weight: bold;
-  }
-  
+  /* Style the footer */
   footer {
     background-color: #333;
-    color: #fff;
+    color: #f2f2f2;
     padding: 1rem;
     text-align: center;
   }
+  
+  footer p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
   
   /* Responsive styles */
   @media screen and (max-width: 768px) {

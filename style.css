@@ -1,137 +1,246 @@
-/* Set default font and box-sizing for the whole page */
-* {
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-  }
-  
-  /* Style header section */
-  header {
-    background-color: #f5f5f5;
-    padding: 50px;
-  }
-  
-  header h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  
-  header p {
-    font-size: 24px;
-    margin-bottom: 50px;
-  }
-  
-  /* Style navigation bar */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
+
+  /* Styles entire body */
+  body{
     margin: 0;
     padding: 0;
+    background-color: #001534;
+  }
+
+  html {
+    font-family: sans-serif;
+  }
+
+  header {
+    background-color: #021531;
+    padding: 10px;
   }
   
-  nav li {
-    margin-right: 20px;
+  header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    padding: 10px;
   }
-  
+
   nav a {
     text-decoration: none;
-    color: #333;
-    font-size: 18px;
-  }
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: white;
+    padding: 20px;
+  } 
   
-  nav .cta {
-    background-color: #008000;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
+  nav a:hover {
+    background-color: #908924;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    /* transition: 1s; */
+  } 
+
+  /* Style the main content sections */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
   }
-  
-  nav .cta:hover {
-    background-color: #006400;
-  }
-  
-  /* Style main sections */
-  main section {
+
+  /* Styling opening page */
+  #opening-page {
+    background-image: url("https://cdn.mos.cms.futurecdn.net/jpFXNmfx5btuoJtmEiTcsN.png");
+    animation: fadeIn 7s;
+    background-size: cover;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    color: white;
+    /* formating to fit full screen and aligning text */
+    width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    text-align: center;
-    padding: 50px;
+    align-items: center;
+    justify-content: center;
   }
-  
-  main section h2 {
-    font-size: 36px;
+
+  #open-page, h1{
+    color: #d7cf5f;
+    font-size: 
+  }
+
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: .3;}
+  }
+
+  /* .mega-flex-container{
+    background-image: url(https://media.istockphoto.com/id/905746364/photo/jellyfish-swimming-around.jpg?s=170667a&w=0&k=20&c=1dZrkc7-iSimNBk0zb8YoH6kbphoA4J3o00SrAJgk7w=);
+    background-size: cover;
+  } */
+  /* https://wallpapers.com/images/hd/neon-blue-aesthetic-woman-underwater-l3uj0ha11te9pant.jpg */
+  /* Getting started styling */
+  #getting-started {
+    background-image: url(https://wallpapers.com/images/hd/neon-blue-aesthetic-woman-underwater-l3uj0ha11te9pant.jpg);
+    color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    animation: fade-in 3s forwards;
+  }
+
+  #sourcing-products, #shipping-and-fulfillment {
+    background-image:url(https://media.istockphoto.com/id/618057110/photo/beautiful-blue-circle-light-with-lens-flare-on-particles-background.jpg?s=612x612&w=0&k=20&c=bFLkaSktz7iMVlReuozvsZTktIJc85wKaK2pDght8GY=);
+    background-size: cover;
+    width: 50%;
+    padding: 100px;
+    margin: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
-  }
-  
-  main section p {
-    font-size: 24px;
-    margin-bottom: 50px;
-  }
-  
-  main section .cta {
-    background-color: #008000;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #001534;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
-    font-size: 18px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+  /* Animation */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    0% {opacity: 0;}
+    50% {opacity: .2;}
+  }
+
+  .flex-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    animation: fade-in 3s forwards;
+    /* background-color: #1b5697; */
+  }
+
+  #pricing-and-profit-calculators, #excel-sheets {
+  background-image:url(https://images.fineartamerica.com/images-medium-large/blue-abstract-042212-david-lane.jpg);
+  width: 50%;
+  padding: 100px;
+  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fbfbfb2d;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+  /* Animation */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
   
-  main section .cta:hover {
-    background-color: #006400;
-  }
   
-  /* Style footer section */
-  footer {
-    background-color: #f5f5f5;
-    padding: 20px;
+  /* Styling Each Section to fit 100% of Screen  */
+  /* section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }  */
+
+/* Reset default browser styles */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+   */
+  /* Set a natural font size for all elements */
+
+  /* body {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+   */
+  
+  /* .cta {
+    background-color: #f2f2f2;
+    color: #333;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    transition: background-color 0.2s ease;
+  } */
+  
+  /* .cta:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+   */
+  /* Style the main content sections */
+  /* main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+  } */
+  
+/*  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  } */
+   */
+  /* section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
     text-align: center;
-    font-size: 16px;
   }
   
-  /* Modal styles */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+  section .cta {
+    margin-top: 1rem;
+  } */
+  
+  /* Style the footer */
+  /* footer {
+    background-color: #333;
+    color: #f2f2f2;
+    padding: 1rem;
+    text-align: center;
   }
   
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
+  footer p {
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
-  
-  /* Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+   */ 
   

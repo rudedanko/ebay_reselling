@@ -1,5 +1,43 @@
 /* Reset default browser styles */
-* {
+header {
+  background-color:#001533;
+  padding: 10px;
+}
+
+header ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 13px;
+  color: white;
+  padding: 20px;
+} 
+
+nav a:hover {
+  background-color: rgb(40, 41, 82);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  transition: 1.4s;
+} 
+
+/* Style the main content sections */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,9 +57,9 @@
   
   /* Style the header and navigation bar */
   header {
-    background-color: #333;
-    color: #f2f2f2;
-    padding: 1rem;
+    background-color: #f2f2f2;
+    padding: 2rem;
+    text-align: center;
   }
   
   nav {
@@ -41,7 +79,7 @@
   
   nav a {
     text-decoration: none;
-    color: #f2f2f2;
+    color: #0b0b0b;
     padding: 0.5rem;
     transition: background-color 0.2s ease;
   }
@@ -110,5 +148,5 @@
   footer p {
     font-size: 1.2rem;
     line-height: 1.5;
-  }
+  } */
   
