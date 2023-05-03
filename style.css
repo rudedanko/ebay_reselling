@@ -1,246 +1,117 @@
-
-  /* Styles entire body */
-  body{
-    margin: 0;
-    padding: 0;
-    background-color: #001534;
-  }
-
-  html {
-    font-family: sans-serif;
-  }
-
-  header {
-    background-color: #021531;
-    padding: 10px;
-  }
-  
-  header ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
-    padding: 10px;
-  }
-
-  nav a {
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-size: 13px;
-    color: white;
-    padding: 20px;
-  } 
-  
-  nav a:hover {
-    background-color: #908924;
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    /* transition: 1s; */
-  } 
-
-  /* Style the main content sections */
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0;
-  }
-
-  /* Styling opening page */
-  #opening-page {
-    background-image: url("https://cdn.mos.cms.futurecdn.net/jpFXNmfx5btuoJtmEiTcsN.png");
-    animation: fadeIn 7s;
-    background-size: cover;
-    font-size: 20px;
-    letter-spacing: 2px;
-    font-family: sans-serif;
-    color: white;
-    /* formating to fit full screen and aligning text */
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #open-page, h1{
-    color: #d7cf5f;
-    font-size: 
-  }
-
-  @keyframes fadeIn {
-    0% {opacity: 0;}
-    50% {opacity: .3;}
-  }
-
-  /* .mega-flex-container{
-    background-image: url(https://media.istockphoto.com/id/905746364/photo/jellyfish-swimming-around.jpg?s=170667a&w=0&k=20&c=1dZrkc7-iSimNBk0zb8YoH6kbphoA4J3o00SrAJgk7w=);
-    background-size: cover;
-  } */
-  /* https://wallpapers.com/images/hd/neon-blue-aesthetic-woman-underwater-l3uj0ha11te9pant.jpg */
-  /* Getting started styling */
-  #getting-started {
-    background-image: url(https://wallpapers.com/images/hd/neon-blue-aesthetic-woman-underwater-l3uj0ha11te9pant.jpg);
-    color: rgb(255, 255, 255);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .flex-container1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    height: 100vh;
-    animation: fade-in 3s forwards;
-  }
-
-  #sourcing-products, #shipping-and-fulfillment {
-    background-image:url(https://media.istockphoto.com/id/618057110/photo/beautiful-blue-circle-light-with-lens-flare-on-particles-background.jpg?s=612x612&w=0&k=20&c=bFLkaSktz7iMVlReuozvsZTktIJc85wKaK2pDght8GY=);
-    background-size: cover;
-    width: 50%;
-    padding: 100px;
-    margin: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #001534;
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+/* Styles entire body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d0d0d0;
 }
 
-  /* Animation */
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    0% {opacity: 0;}
-    50% {opacity: .2;}
-  }
+html {
+  font-family: "MODERN TYPEWRITER", sans-serif;
+}
 
-  .flex-container2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
-    animation: fade-in 3s forwards;
-    /* background-color: #1b5697; */
-  }
+header {
+  background-color: #000000;
+  padding: 10px;
+}
 
-  #pricing-and-profit-calculators, #excel-sheets {
-  background-image:url(https://images.fineartamerica.com/images-medium-large/blue-abstract-042212-david-lane.jpg);
+header ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 12px;
+  color: white;
+  padding: 20px;
+}
+
+nav a:hover {
+  color: gray;
+}
+
+/* Styling opening page */
+#opening-page {
+  background-image: url("/images/main.png");
+  background-size: cover;
+  letter-spacing: 2px;
+  color: white;
+
+  /* formating to fit full screen and aligning text */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#open-page, h1 {
+  color: #ffffff;
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.528);
+  padding: 20px;
+}
+
+#lol {
+  color: rgb(221, 221, 221);
+}
+
+#lo {
+  color: rgb(216, 216, 216);
+  
+}
+
+#opening-page p{
+  background: rgba(0, 0, 0, 0.676);
+  padding: 20px;
+}
+
+#how_to_know {
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 300px;
+}
+
+#how_to_know h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+#how_to_know p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.card img {
+  max-width: 100%;
+}
+.card {
   width: 50%;
-  padding: 100px;
-  margin: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #fbfbfb2d;
-  color: rgb(255, 255, 255);
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 70px;
+  background-color: #424242;
+  border: rgb(8, 8, 8) solid 20px;
 }
 
-  /* Animation */
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  
-  /* Styling Each Section to fit 100% of Screen  */
-  /* section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-  }  */
+#faq_and_support {
+  background: white;
+  padding: 50px;
+}
 
-/* Reset default browser styles */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  } 
-   */
-  /* Set a natural font size for all elements */
-
-  /* body {
-    background-color: #f2f2f2;
-    color: #333;
-  }
-   */
-  
-  /* .cta {
-    background-color: #f2f2f2;
-    color: #333;
-    border: none;
-    border-radius: 0.25rem;
-    padding: 0.5rem;
-    transition: background-color 0.2s ease;
-  } */
-  
-  /* .cta:hover {
-    background-color: #ddd;
-    color: #333;
-  }
-   */
-  /* Style the main content sections */
-  /* main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0;
-  } */
-  
-/*  
-  section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  } */
-   */
-  /* section p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    text-align: center;
-  }
-  
-  section .cta {
-    margin-top: 1rem;
-  } */
-  
-  /* Style the footer */
-  /* footer {
-    background-color: #333;
-    color: #f2f2f2;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  footer p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-  }
-   */ 
-  
+footer {
+  background-color: white;
+  padding: 20px;
+}
